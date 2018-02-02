@@ -1,0 +1,83 @@
+.header{
+  height: 33px;
+}
+.header>div{
+  width: 30px;
+  height: 33px;
+  border-right: 1px solid #d3d3d3;
+  display: inline-block;
+}
+.header>button{
+  height: 33px;
+  border-left: 1px solid #d3d3d3 !important;
+  background-color: transparent;
+  vertical-align: top;
+  border: none;
+  margin-left: -2px;
+}
+.container{
+  display: block;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  border: solid 1px #d3d3d3;
+  box-shadow: 1px 2px 6px #e3e3e3;
+}
+.task{
+  display: block;
+  width: 100%;
+  border-top: 1px solid #d3d3d3;
+  height: 25px;
+
+  overflow: hidden;
+}
+.task:hover>div>button{
+  display: inline-block;
+}
+.task>.input{
+  width: 30px;
+  height: 25px;
+  border-right: 1px solid #d3d3d3;
+  display: inline-block;
+  vertical-align: middle;
+}
+.input>input{
+  margin: 7px 0 0 9px;
+}
+.task>.body{
+  display: inline-block;
+  border-left: 1px solid #d3d3d3;
+  margin-left: -2px;
+  height: 25px;
+  max-width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.task>div>span{
+  max-width: 350px;
+  white-space: nowrap;
+  margin-left: 10px;
+  display: inline;
+  margin-right: 20px;
+  height: 25px;
+  text-overflow: ellipsis;
+}
+.task>div>button{
+  right: 0;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  display: none;
+
+}
+.completed{
+  opacity: 0.5;
+}
+span.completed{
+  text-decoration: line-through;
+}
+
+

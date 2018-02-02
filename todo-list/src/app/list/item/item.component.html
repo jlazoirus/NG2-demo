@@ -1,0 +1,8 @@
+<li class="task">
+  <div class="input">
+    <input [class.completed]="task.completed" type="checkbox" [(ngModel)]="task.completed"></div>
+  <div class="body">
+    <span [class.completed]="task.completed" >{{task.title}}</span>
+    <button (click)="removeItem()">X</button>
+  </div>
+</li>
